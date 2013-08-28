@@ -33,6 +33,9 @@ snippet of javascript that start the ball rolling is shown below. The "createNew
 highchart options that get populated from the JSON that is returned from the server side. "getRemoteDataDrawChart" 
 function gets the remote data, populate the options object and draws the chart to a <div> with id 'chart1-container'
 or 'chart2-container' or 'chart3-container'. All the javascript code can be found in the custom-chart.js file.
+There is a "getBaseChart" function that has a base options object that get extended by the "createNewLineChart"
+function for each chart. This is especially useful if you need to display different types of charts on a single page.
+Hope this will be helpful as I had a hard time finding a Spring application that integrated Highcharts.
 
   
   
