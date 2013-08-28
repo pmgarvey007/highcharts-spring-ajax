@@ -6,17 +6,16 @@ JSON format using a Spring controller. The project is based on maven so upon dow
 "mvn clean package tomcat7:run" to build and deploy the app to tomcat 7. To access the application open a browser and 
 go to "http://localhost:8080/highcharts" There should be 3 charts being displayed. 
 
-The project uses:
+<b>The project uses:</b></br>
 
-Spring 3.2.4.RELEASE (http://www.springsource.org/)
-Jackson 1.9.7 (http://jackson.codehaus.org/)
-Bootswatch 3.0 (http://bootswatch.com/)
-Highcharts 3.0.5 (http://www.highcharts.com/download)
-JQuery 1.10.2
+Spring 3.2.4.RELEASE (http://www.springsource.org/)</br>
+Jackson 1.9.7 (http://jackson.codehaus.org/)</br>
+Bootswatch 3.0 (http://bootswatch.com/)</br>
+Highcharts 3.0.5 (http://www.highcharts.com/download)</br>
+JQuery 1.10.2</br></br>
 
 
-Overview:
-
+Overview:</br></br>
 Upon accessing "http://localhost:8080/highcharts" from the browser a Spring controller "HighChartsController" is called 
 and a JSP file called "charts.jsp" is loaded on the browser. Once the loading is complete 3 ajax calls are made back to 
 the "HighChartsController" to get the data to display the charts. The "HighChartsController" in turns call a fake
