@@ -30,14 +30,14 @@ Ajax calls to get 3 JSON string of data to be used by Highcharts to generate the
 snippet of javascript that start the ball rolling is:
 
   
-  <script type="text/javascript">
+  
         var contextPath = '<c:out value="${pageContext.request.contextPath}"/>';
         $(document).ready(function() {
             getRemoteDataDrawChart(contextPath + '/linechart1', createNewLineChart('chart1-container'));
             getRemoteDataDrawChart(contextPath + '/linechart2', createNewLineChart('chart2-container'));
             getRemoteDataDrawChart(contextPath + '/linechart3', createNewLineChart('chart3-container'));
         });
-    </script>
+   
     
     All the processing is handled by the custom-chart.js file.
   
