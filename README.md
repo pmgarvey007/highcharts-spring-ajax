@@ -27,7 +27,10 @@ Highcharts then renders the charts.
 
 When the charts.jsp file has rendered on the screen it immediately kicks off some javascripts that makes 3 remote 
 Ajax calls to get 3 JSON string of data to be used by Highcharts to generate the charts. On the charts.jsp the 
-snippet of javascript that start the ball rolling is:
+snippet of javascript that start the ball rolling is shown below. The "createNewLineChart" function create a 
+highchart options that get populated from the JSON that is returned from the server side. "getRemoteDataDrawChart" 
+function gets the remote data, populate the options object and draws the chart to a <div> with id 'chart1-container'
+or 'chart2-container' or 'chart3-container'.
 
   
   
