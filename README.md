@@ -29,7 +29,7 @@ When the charts.jsp file has rendered on the screen it immediately kicks off som
 Ajax calls to get 3 JSON string of data to be used by Highcharts to generate the charts. On the charts.jsp the 
 snippet of javascript that start the ball rolling is:
 
-  <pre>
+  
   <script type="text/javascript">
         var contextPath = '<c:out value="${pageContext.request.contextPath}"/>';
         $(document).ready(function() {
@@ -38,5 +38,7 @@ snippet of javascript that start the ball rolling is:
             getRemoteDataDrawChart(contextPath + '/linechart3', createNewLineChart('chart3-container'));
         });
     </script>
-   </pre>
+    
+    All the processing is handled by the custom-chart.js file.
+  
 
