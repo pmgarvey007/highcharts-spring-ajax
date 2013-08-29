@@ -62,7 +62,7 @@ function getBaseChart() {
                     }
                 },
                 labels: {
-                    rotation: -30,
+                    rotation: -25,
                     align: 'right',
                     style: {
                         color: '#3366cc',
