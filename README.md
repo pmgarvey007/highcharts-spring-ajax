@@ -1,21 +1,23 @@
-highcharts-spring-ajax
-======================
+#highcharts-spring-ajax
+###This is a sample application that shows how to send server-side data to </b>Highcharts</b> (http://www.highcharts.com/) in the
+JSON format using a Spring controller.
 
-This is a sample application that shows how to send server-side data to </b>Highcharts</b> (http://www.highcharts.com/) in the
-JSON format using a Spring controller. The project is based on maven so upon downloading the project you can do a 
+The project is based on maven so upon downloading the project you can do a
 "mvn clean package tomcat7:run" to build and deploy the app to tomcat 7. To access the application open a browser and 
 go to "http://localhost:8080/highcharts" There should be 3 charts being displayed. 
 
-<b>The project uses:</b>
+The project uses:
+======
 
-<b>Spring 3.2.4.RELEASE (http://www.springsource.org/)</b>
-<b>Jackson 1.9.7 (http://jackson.codehaus.org/)</b>
-<b>Bootswatch 3.0 (http://bootswatch.com/)</b>
-<b>Highcharts 3.0.5 (http://www.highcharts.com/download)</b>
-<b>JQuery 1.10.2 (http://jquery.com/)</b>
+-Spring 3.2.4.RELEASE (http://www.springsource.org/)
+-Jackson 1.9.7 (http://jackson.codehaus.org/)
+-Bootswatch 3.0 (http://bootswatch.com/)
+-Highcharts 3.0.5 (http://www.highcharts.com/download)
+-JQuery 1.10.2 (http://jquery.com/)
 
 
-<b>General Overview:</b>
+General Overview:
+======
 Upon accessing "http://localhost:8080/highcharts" from the browser a Spring controller <b>HighChartsController</b> is called
 and a JSP file called <b>charts.jsp</b> is loaded on the browser. Once the loading is complete 3 ajax calls are made back to
 the <b>HighChartsController</b> to get the data to display the charts. The <b>HighChartsController</b> in turns call a fake
@@ -25,7 +27,8 @@ converted into a JSON string by Spring. Actually Spring uses Jackson to serializ
 is sent back to custom javascript file <b>custom-chart.js</b> that has all the plumbing to feed the data to <b>Highcharts</b>.
 <b>Highcharts</b> then renders the charts.
 
-<b>custom-chart.js Overview:</b>
+custom-chart.js Overview:
+======
 
 When the charts.jsp file has rendered on the screen it immediately kicks off some java scripts that makes 3 remote
 Ajax calls to get 3 JSON string of data to be used by <b>Highcharts</b> to generate the charts. On the charts.jsp the
